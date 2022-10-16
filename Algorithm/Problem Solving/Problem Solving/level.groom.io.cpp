@@ -2,13 +2,11 @@
 
 void lgi1()
 {
-	string arr[99][99];
+	auto arr = new string[99][99];
 	int n, k;
 	int r = 0, c = 0;
 	int cr = 0, cc = -1;
 	cin >> n;
-
-
 
 	int i;
 
