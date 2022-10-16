@@ -66,6 +66,7 @@ void lgi1()
 		}
 		cout << endl;
 	}
-
+	
+	delete[] arr;
 	pause();
 }
