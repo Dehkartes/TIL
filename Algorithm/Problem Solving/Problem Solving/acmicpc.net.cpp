@@ -21,3 +21,14 @@ void an1()
 	
 	pause();
 }
+
+void an2()
+{
+	int value;
+
+	cin >> value;
+	value -= 543;
+	cout << value;
+
+	return 0;
+}
