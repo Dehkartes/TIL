@@ -6,6 +6,9 @@
 using namespace std;
 
 void pause();
-void lgi1();
 
 void an1();
+void an2();
+
+void lgi1();
+

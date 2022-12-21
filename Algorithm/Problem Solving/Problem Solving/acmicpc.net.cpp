@@ -30,5 +30,5 @@ void an2()
 	value -= 543;
 	cout << value;
 
-	return 0;
+	pause();
 }
