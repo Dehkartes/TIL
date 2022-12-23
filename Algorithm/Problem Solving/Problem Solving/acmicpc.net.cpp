@@ -60,3 +60,10 @@ void an3()
 
 	pause();
 }
+
+void an4()
+{
+	cout << "         ,r'\"7\nr`-_   ,'  ,/\n \\. \". L_r'\n   `~\\/\n      |\n      |";
+
+	pause();
+}
