@@ -67,3 +67,31 @@ void an4()
 
 	pause();
 }
+
+void an5()
+{
+	int x;
+	int y;
+
+	cin >> x;
+	cin >> y;
+
+	if (0 < x && 0 < y)
+	{
+		cout << 1;
+	}
+	else if (x < 0 && 0 < y)
+	{
+		cout << 2;
+	}
+	else if (x < 0 && 0 > y)
+	{
+		cout << 3;
+	}
+	else if (x > 0 && 0 > y)
+	{
+		cout << 4;
+	}
+
+	pause();
+}
