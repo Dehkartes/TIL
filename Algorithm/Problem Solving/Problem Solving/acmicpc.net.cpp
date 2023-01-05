@@ -123,3 +123,28 @@ void an6()
 
 	pause();
 }
+
+void an7()
+{
+	int current_hour;
+	int current_minutes;
+	int take_time;
+	int mtoh;
+	int left_min;
+
+	cin >> current_hour;
+	cin >> current_minutes;
+	cin >> take_time;
+
+	current_minutes += take_time;
+
+	mtoh = current_minutes / 60;
+	left_min = current_minutes % 60;
+
+	current_hour += mtoh;
+	current_hour = current_hour % 24;
+
+	cout << current_hour << " " << left_min;
+
+	pause();
+}

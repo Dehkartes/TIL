@@ -37,6 +37,10 @@ int main()
 		{
 			an6();
 		}
+		else if (problem_code == "an7")
+		{
+			an7();
+		}
 		else
 		{
 			cout << "문제 코드를 찾을 수 없습니다\n";
