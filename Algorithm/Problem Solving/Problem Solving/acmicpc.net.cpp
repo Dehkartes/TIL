@@ -148,3 +148,55 @@ void an7()
 
 	pause();
 }
+
+void an8()
+{
+	int d1 = 0;
+	int d2 = 0;
+	int d3 = 0;
+
+	int res;
+
+	cin >> d1;
+	cin >> d2;
+	cin >> d3;
+
+
+	if (d1 == d2 and d1 == d3)
+	{
+		res = 10000 + d1 * 1000;
+	}
+	else if (d1 != d2 and d2 != d3 and d3 != d1)
+	{
+		int sel = d1;
+		if (sel < d2)
+		{
+			sel = d2;
+		}
+		if (sel < d3)
+		{
+			sel = d3;
+		}
+
+		res = sel * 100;
+	}
+	else
+	{
+		if (d1 == d2)
+		{
+			res = 1000 + d1 * 100;
+		}
+		else if (d2 == d3)
+		{
+			res = 1000 + d2 * 100;
+		}
+		else
+		{
+			res = 1000 + d3 * 100;
+		}
+	}
+
+	cout << res;
+
+	pause();
+}
