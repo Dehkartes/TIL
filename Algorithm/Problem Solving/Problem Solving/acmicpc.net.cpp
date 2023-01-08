@@ -213,3 +213,22 @@ void an9()
 
 	pause();
 }
+
+void an10()
+{
+	int n = 0;
+	cin >> n;
+
+	int x;
+	int y;
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> x;
+		cin >> y;
+
+		cout << x + y << endl;
+	}
+
+	pause();
+}
