@@ -232,3 +232,17 @@ void an10()
 
 	pause();
 }
+
+void an11()
+{
+	int n;
+	int res = 0;
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
+		res += i;
+
+	cout << res;
+
+	pause();
+}

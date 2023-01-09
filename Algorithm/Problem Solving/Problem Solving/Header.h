@@ -17,6 +17,7 @@ void an7();
 void an8();
 void an9();
 void an10();
+void an11();
 
 void lgi1();
 
