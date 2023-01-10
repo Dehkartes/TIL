@@ -246,3 +246,26 @@ void an11()
 
 	pause();
 }
+
+void an12()
+{
+	int X;
+	int N;
+	int a;
+	int b;
+	int compare = 0;
+
+	cin >> X;
+	cin >> N;
+
+	for (size_t i = 0; i < N; i++)
+	{
+		cin >> a;
+		cin >> b;
+		compare += a * b;
+	}
+
+	X == compare ? cout << "Yes" : cout << "No";
+
+	pause();
+}
