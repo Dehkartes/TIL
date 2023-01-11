@@ -269,3 +269,27 @@ void an12()
 
 	pause();
 }
+
+void an13()
+{
+	cin.tie(NULL);
+	ios_base::sync_with_stdio(false);
+
+	int T;
+
+	int a;
+	int b;
+
+	cin >> T;
+
+
+	for (size_t i = 0; i < T; i++)
+	{
+		cin >> a;
+		cin >> b;
+
+		cout << a + b << "\n";
+	}
+
+	pause();
+}
