@@ -293,3 +293,18 @@ void an13()
 
 	pause();
 }
+
+void an14()
+{
+	int a;
+	int b;
+	int c;
+
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	cout << a + b + c;
+
+	pause();
+}
