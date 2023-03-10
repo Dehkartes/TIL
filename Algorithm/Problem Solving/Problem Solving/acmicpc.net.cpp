@@ -296,9 +296,9 @@ void an13()
 
 void an14()
 {
-	int a;
-	int b;
-	int c;
+	long long a;
+	long long b;
+	long long c;
 
 	cin >> a;
 	cin >> b;
