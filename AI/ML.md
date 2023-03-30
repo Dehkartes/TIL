@@ -1,6 +1,6 @@
 요약:  
 	[Linear Regression]  
-	H(x) = Wx + b  
+  H(x) = Wx + b  
 	H(x): 가설 함수  
 	W: 가중치(weight)  
 	b: 편향(bias)  
@@ -72,7 +72,7 @@ Logistic(Binary) Classification:
  - 둘 중 하나를 고르는 분류 ex) 스팸인가 아닌가?  
  - 0 or 1로 결과 반환  
  - 0 ~ 1 범위에서만 반환 시키기 위해 시그모이드 함수 사용  
-![m16.1](./img/m16.1.png.png)![m15](./img/m16.2.png.png)  
+![m16.1](./img/m16.1.png)![m15](./img/m16.2.png)  
 
 Logistic classification hypothesis funciton:  
 ![m17](./img/m17.png)  
