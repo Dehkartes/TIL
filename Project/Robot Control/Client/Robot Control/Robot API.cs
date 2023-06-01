@@ -4,21 +4,33 @@ using RestSharp;
 
 public class Robot
 {
+	private readonly string baseurl;
+	private RestClient client;
 	public Robot()
 	{
-	}
+		baseurl = @"http://localhost:5000/";
+		client = new RestClient(baseurl);
+    }
 
 	public void test()
 	{
-		Console.WriteLine("test called");
-		string baseUrl = @"http://localhost:5000/";
-
-		RestClient client = new RestClient(baseUrl);
 		var request = new RestRequest("/test", Method.Get);
-
-		RestResponse response = client.Get(request);
-
+        client.Get(request);
+		Console.WriteLine("3");
+        RestResponse response = client.Get(request); //느림발생
         if (response.StatusCode == HttpStatusCode.OK)
+		{
+            Console.WriteLine(response.Content);
+		}
+	}
+
+	public void conn()
+	{
+		var request = new RestRequest("/param", Method.Post);
+		request.AddParameter(null, "test", ParameterType.RequestBody);
+		RestResponse response = client.Post(request);
+
+		if (response.StatusCode == HttpStatusCode.OK)
 		{
 			Console.WriteLine(response.Content);
 		}

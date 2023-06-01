@@ -44,5 +44,17 @@ namespace Robot_Control
             Robot rapi = new Robot();
             rapi.test();
         }
+
+        private void button_connect_Click(object sender, EventArgs e)
+        {
+            Robot rapi = new Robot();
+            rapi.conn();
+        }
+
+        private void button_greeting_Click(object sender, EventArgs e)
+        {
+            Robot rapi = new Robot();
+            rapi.test();
+        }
     }
 }

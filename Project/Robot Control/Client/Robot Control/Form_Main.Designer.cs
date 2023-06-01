@@ -47,6 +47,7 @@
             button_greeting.TabIndex = 0;
             button_greeting.Text = "Greeting";
             button_greeting.UseVisualStyleBackColor = true;
+            button_greeting.Click += button_greeting_Click;
             // 
             // button_hi
             // 
@@ -92,6 +93,7 @@
             button_connect.TabIndex = 5;
             button_connect.Text = "Connect";
             button_connect.UseVisualStyleBackColor = true;
+            button_connect.Click += button_connect_Click;
             // 
             // pictureBox1
             // 
