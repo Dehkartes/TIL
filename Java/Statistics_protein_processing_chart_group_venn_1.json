@@ -1,0 +1,60 @@
+{
+  "type": "venn",
+  "title": "Group 1: The number of shared proteins",
+  "data": [
+    {
+      "name": "<b>345</b><br>9.54%",
+      "sets": [
+        "1_1 Intensity"
+      ],
+      "value": 3189
+    },
+    {
+      "name": "<b>424</b><br>11.73%",
+      "sets": [
+        "1_2 Intensity"
+      ],
+      "value": 3268
+    },
+    {
+      "name": "<b>428</b><br>11.84%",
+      "sets": [
+        "1_3 Intensity"
+      ],
+      "value": 3272
+    },
+    {
+      "name": "<b>103</b><br>81.5%",
+      "sets": [
+        "1_1 Intensity",
+        "1_2 Intensity"
+      ],
+      "value": 2947
+    },
+    {
+      "name": "<b>161</b><br>83.1%",
+      "sets": [
+        "1_1 Intensity",
+        "1_3 Intensity"
+      ],
+      "value": 3005
+    },
+    {
+      "name": "<b>161</b><br>83.1%",
+      "sets": [
+        "1_2 Intensity",
+        "1_3 Intensity"
+      ],
+      "value": 3005
+    },
+    {
+      "name": "<b>2844</b><br>78.65%",
+      "sets": [
+        "1_1 Intensity",
+        "1_2 Intensity",
+        "1_3 Intensity"
+      ],
+      "value": 2844
+    }
+  ]
+}
