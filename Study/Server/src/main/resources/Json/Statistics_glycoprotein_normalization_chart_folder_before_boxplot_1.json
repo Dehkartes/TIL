@@ -1,0 +1,112 @@
+{
+  "chart": {
+    "type": "boxplot"
+  },
+  "plotOptions": {
+    "series": {
+      "pointWidth": 100
+    }
+  },
+  "title": {
+    "text": "before_central_tendency_correction_boxplot"
+  },
+  "legend": {
+    "enabled": "false"
+  },
+  "xAxis": {
+    "categories": [
+      "1_1 Intensity",
+      "1_2 Intensity",
+      "1_3 Intensity",
+      "2_1 Intensity",
+      "2_2 Intensity",
+      "2_3 Intensity"
+    ]
+  },
+  "series": [
+    {
+      "data": [
+        {
+          "name": "1_1 Intensity",
+          "x": 0,
+          "low": -1.2,
+          "q1": 4.29,
+          "median": 5.74,
+          "q3": 7.2,
+          "high": 17.55,
+          "fillColor": "#7cb5ec"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "name": "1_2 Intensity",
+          "x": 1,
+          "low": -0.79,
+          "q1": 4.36,
+          "median": 5.73,
+          "q3": 7.23,
+          "high": 17.0,
+          "fillColor": "#f7a35c"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "name": "1_3 Intensity",
+          "x": 2,
+          "low": -1.38,
+          "q1": 4.7,
+          "median": 6.18,
+          "q3": 7.71,
+          "high": 17.95,
+          "fillColor": "#90ed7d"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "name": "2_1 Intensity",
+          "x": 3,
+          "low": -0.23,
+          "q1": 4.46,
+          "median": 5.82,
+          "q3": 7.33,
+          "high": 16.6,
+          "fillColor": "#f15c80"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "name": "2_2 Intensity",
+          "x": 4,
+          "low": -0.89,
+          "q1": 5.01,
+          "median": 6.5,
+          "q3": 7.96,
+          "high": 17.88,
+          "fillColor": "#8085e9"
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "name": "2_3 Intensity",
+          "x": 5,
+          "low": -0.75,
+          "q1": 4.3,
+          "median": 5.55,
+          "q3": 7.05,
+          "high": 17.34,
+          "fillColor": "#7cb5ec"
+        }
+      ]
+    }
+  ]
+}

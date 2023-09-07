@@ -1,0 +1,37 @@
+{
+  "chart": {
+    "type": "column"
+  },
+  "title": {
+    "text": "after_norm 1_1 Intensity"
+  },
+  "xAxis": {
+    "title": {
+      "text": "1_1 Intensity"
+    }
+  },
+  "yAxis": {
+    "title": {
+      "text": "Count"
+    }
+  },
+  "series": [
+    {
+      "name": "Histogram",
+      "data": [
+        9,
+        59,
+        261,
+        389,
+        296,
+        108,
+        41,
+        12,
+        7,
+        4
+      ],
+      "pointStart": -1.2209159452867755,
+      "pointInterval": 1.8768498218272325
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "data1": [
+    {
+      "P02763": [
+        {
+          "x": 0,
+          "color": "#006360",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "borderWidth": 0,
+            "useHTML": "true",
+            "format": "<span class='title'>Signal Peptide=18<b class='tri-first' style='left:18px'></b></span>",
+            "y": 45
+          },
+          "marker": {
+            "symbol": "square",
+            "radius": 21
+          }
+        },
+        {
+          "x": 33,
+          "color": "#ff6c6c",
+          "description": "H5N4F0S2 H6N5F0S3 H6N5F1S2 H6N5F1S3 H6N5F2S1 H5N4F0S1 H5N4F1S1 H5N4F2S1 H5N5F0S2 H6N5F0S2 H6N5F1S1 H6N5F2S2 H6N5F2S3 H6N5F3S1 H6N5F3S2 H6N5F4S2 H6N6F0S3 H6N6F2S2 H7N5F0S2 H7N5F1S2 H7N5F2S1 H7N5F2S2 H7N6F0S2 H7N6F1S2 H7N6F1S3 H7N6F1S4 H7N6F2S1 H7N6F2S2 H7N6F2S3 H7N6F4S1 H7N7F1S2",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>33</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 93,
+          "color": "#61d6d6",
+          "description": "H5N4F0S2 H6N5F0S1 H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F1S3 H6N5F2S2 H6N5F3S1 H6N5F4S2 H7N6F0S1 H7N6F0S2 H7N6F0S3 H7N6F0S4 H7N6F1S2 H7N6F1S3 H7N6F1S4 H7N6F2S2 H7N6F2S3 H7N6F4S3 H7N6F5S3 H7N7F1S4 H8N7F0S2",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>93</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 103,
+          "description": "H5N4F0S2 H5N4F1S2 H5N4F2S1 H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F1S3 H6N5F2S2 H6N5F2S3 H7N5F1S2 H7N5F2S2 H7N5F3S2 H7N6F0S3 H7N6F0S4 H7N6F1S3 H7N6F1S4 H7N6F2S2 H7N6F2S3 H7N6F2S4 H7N6F3S3 H7N6F3S4 H7N6F4S2 H7N6F5S2 H7N6F5S3 H8N7F0S3 H8N7F0S4 H8N7F1S3 H8N7F1S4 H9N8F0S3 H9N8F0S4",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>103</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 201,
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "borderWidth": 0,
+            "useHTML": "true",
+            "format": "<span class='title'>Protein Length=201<b class='tri'></b></span>",
+            "y": 45
+          },
+          "marker": {
+            "symbol": "square",
+            "radius": 21
+          }
+        }
+      ],
+      "P19652": [
+        {
+          "x": 18,
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "borderWidth": 0,
+            "useHTML": "true",
+            "format": "<span class='title'>Signal Peptide=18<b class='tri-first' style='left:18px'></b></span>",
+            "y": 45
+          },
+          "marker": {
+            "symbol": "square",
+            "radius": 21
+          }
+        },
+        {
+          "x": 33,
+          "description": "H5N4F0S1 H5N4F0S2 H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F2S1 H7N6F2S2 H5N4F1S2 H5N4F2S1 H5N5F0S2 H6N3F0S1 H6N4F0S1 H6N5F0S1 H6N5F1S1 H6N5F1S3 H6N5F2S2 H6N5F2S3 H6N5F3S2 H6N5F4S2 H6N6F0S3 H6N6F1S1 H7N5F0S2 H7N5F1S1 H7N5F3S2 H7N6F0S1 H7N6F0S2 H7N6F0S3 H7N6F0S4 H7N6F1S2 H7N6F1S3 H7N6F2S3 H7N6F3S1 H8N7F0S3 H9N8F1S1",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>33</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 56,
+          "description": "H5N4F0S1 H5N4F0S2 H5N4F1S2 H5N4F2S1 H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F1S3 H6N5F2S1 H6N5F2S3 H6N5F3S1 H6N5F3S2 H7N5F1S2 H7N5F2S2 H7N6F0S4 H7N6F1S3 H7N6F1S4 H7N6F2S2 H9N8F0S1",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>56</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 72,
+          "description": "H5N4F0S2 H6N5F0S1 H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F1S3 H6N5F2S2 H7N5F0S2 H7N5F1S1 H7N6F0S1 H7N6F0S2 H7N6F0S3 H7N6F1S3 H7N6F3S2 H7N6F3S3 H8N7F1S3",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>72</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 93,
+          "description": "H6N5F0S2 H6N5F0S3 H6N5F1S2 H6N5F2S1 H6N5F2S2 H7N6F0S2 H7N6F0S3 H7N6F2S2 H7N6F2S3 H7N6F3S1 H8N7F0S4 H8N7F1S2",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>93</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 103,
+          "description": "H5N4F0S2 H6N5F0S2 H6N5F0S3 H6N5F1S3 H6N5F2S3 H6N7F1S3 H7N5F2S2 H7N6F0S3 H7N6F0S4 H7N6F1S3 H7N6F1S4 H7N6F2S2 H7N6F2S3 H7N6F2S4 H7N6F3S2 H7N6F3S3 H7N6F3S4 H8N7F0S3 H8N7F0S4 H8N7F1S4 H9N8F0S1 H9N8F0S2 H9N8F0S4",
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "format": "<span style='color: white'>103</span>",
+            "y": 0
+          }
+        },
+        {
+          "x": 201,
+          "dataLabels": {
+            "enabled": "true",
+            "connectorColor": "false",
+            "connectorWidth": "false",
+            "borderWidth": 0,
+            "useHTML": "true",
+            "format": "<span class='title'>Protein Length=201<b class='tri'></b></span>",
+            "y": 45
+          },
+          "marker": {
+            "symbol": "square",
+            "radius": 21
+          }
+        }
+      ]
+    }
+  ]
+}

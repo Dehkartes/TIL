@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://spac9.cm4mexxky2bm.ap-northeast-2.rds.amazonaws.com:3306/spac9
+    username: spac9
+    password: qwer1234++
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace

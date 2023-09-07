@@ -1,0 +1,78 @@
+{
+  "chart": {
+    "type": "column"
+  },
+  "title": {
+    "text": "after_norm 1_1 Intensity"
+  },
+  "xAxis": {
+    "title": {
+      "text": "1_1 Intensity"
+    }
+  },
+  "yAxis": {
+    "title": {
+      "text": "Count"
+    }
+  },
+  "plotOptions": {
+    "series": {
+      "pointPadding": 0,
+      "groupPadding": 0,
+      "borderWidth": 0.5,
+      "borderColor": "rgba(255,255,255,0.5)"
+    }
+  },
+  "series": [
+    {
+      "name": "Histogram",
+      "data": [
+        5,
+        4,
+        5,
+        4,
+        24,
+        27,
+        68,
+        63,
+        81,
+        90,
+        120,
+        116,
+        113,
+        126,
+        117,
+        128,
+        116,
+        97,
+        81,
+        83,
+        71,
+        77,
+        46,
+        31,
+        49,
+        38,
+        21,
+        18,
+        19,
+        9,
+        15,
+        11,
+        3,
+        8,
+        5,
+        4,
+        3,
+        2,
+        3,
+        0,
+        0,
+        2,
+        1
+      ],
+      "pointStart": 1.283705103104668,
+      "pointInterval": 0.4437205525474461
+    }
+  ]
+}

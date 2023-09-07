@@ -1,0 +1,705 @@
+{
+  "A2A5R2": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 298,
+      "name": "DILEDVVTSAVK",
+      "color": "#eee",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 570,
+      "name": "GLECLVSILK",
+      "colorIndex": 2,
+      "color": "#eee",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 695,
+      "name": "LDSTQVGEFLGDSTR",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 652,
+      "name": "EIIEHGIELFNK",
+      "color": "#eee",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 1314,
+      "name": "VLQEYTSDDMNVAPGDR",
+      "color": "#eee",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 352,
+      "name": "QSLSSADNLEPDVQGHQVAAR",
+      "color": "#eee",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 1509,
+      "name": "HLDVDLDR",
+      "color": "#eee",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 1498,
+      "name": "",
+      "color": "#eee",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 1517,
+      "name": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2AG50": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 33,
+      "name": "33",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "DILEDVVTSAVK",
+      "colorIndex": 2,
+      "color": "#eee",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "103",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "201",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2AHG0": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 35,
+      "name": "35",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "72",
+      "colorIndex": 2,
+      "color": "#61d6d6",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "103",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "201",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2AGT5": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 33,
+      "name": "33",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "72",
+      "colorIndex": 2,
+      "color": "#61d6d6",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "103",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "201",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2A690": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 33,
+      "name": "33",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "72",
+      "colorIndex": 2,
+      "color": "#61d6d6",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "103",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "201",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2A8U2": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 33,
+      "name": "33",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "72",
+      "colorIndex": 2,
+      "color": "#61d6d6",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "103",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "201",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Signal Peptide=201<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ],
+  "A2A432": [
+    {
+      "name": "18",
+      "dataLabels": {
+        "enabled": true,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "borderWidth": 0,
+        "useHTML": true,
+        "format": "<span class=\"title\">Signal Peptide=18<b class=\"tri-first\" style=\"left:18px\"></b></span>",
+        "description": "",
+        "x": 0,
+        "y": 45
+      },
+      "color": "#006360",
+      "colorIndex": 98,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    },
+    {
+      "x": 33,
+      "name": "33",
+      "color": "#ff6c6c",
+      "colorIndex": 0,
+      "description": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">33</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 72,
+      "name": "72",
+      "colorIndex": 2,
+      "color": "#61d6d6",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">72</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 93,
+      "name": "93",
+      "color": "#eee",
+      "colorIndex": 3,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">93</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 103,
+      "name": "",
+      "color": "#ffc41d",
+      "colorIndex": 4,
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "format": "<span style=\"color: white\">103</span>",
+        "y": 0
+      }
+    },
+    {
+      "x": 201,
+      "name": "",
+      "dataLabels": {
+        "enabled": false,
+        "connectorColor": "false",
+        "connectorWidth": "false",
+        "useHTML": true,
+        "borderWidth": 0,
+        "format": "<span class=\"title\">Protein Length =1792<b class=\"tri\"></b></span> ",
+        "y": 45
+      },
+      "colorIndex": 99,
+      "marker": {
+        "symbol": "square",
+        "radius": 21
+      }
+    }
+  ]
+}
