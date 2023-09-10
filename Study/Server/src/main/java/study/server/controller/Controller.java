@@ -89,24 +89,19 @@ public class Controller {
 	public String getSearchedGlycoproteinIdentification() throws JsonProcessingException {
 		List<SearchedGlycoproteinIdentificationData> dataList = new ArrayList<>();
 		dataList.add(SearchedGlycoproteinIdentificationData.builder().x(789.0391).y(3.76273215877882).labels("None").build());
-		dataList.add(SearchedGlycoproteinIdentificationData.builder().x(886.479).y(4.612093956261647).labels("None").build());
 		Id id1 = Id.builder().name("Unmatched_ions").color("#ADADAD").data(dataList).build();
-		Id id2 = Id.builder().name("Matched_Large_Yions").color("#009394").build();
 		List<Id> idList = new ArrayList<>();
 		idList.add(id1);
-		idList.add(id2);
 		HashMap<String,List<Id>> idmap = new HashMap<>();
 		idmap.put("30526_30537", idList);
-		idmap.put("30526_30537", idList);
 		Hcd hcd = Hcd.builder().id(idmap).build();
-		SearchedGlycoproteinIdentificationDTO result = SearchedGlycoproteinIdentificationDTO.builder().hcd(hcd).build();
+		List<Hcd> hcdList = new ArrayList<>();
+		hcdList.add(hcd);
+		SearchedGlycoproteinIdentificationDTO result = SearchedGlycoproteinIdentificationDTO.builder().hcd(hcdList).build();
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(result);
 		System.out.println(json);
-
-		//for( idmap.keySet().iterator());
-
 
 		return json;
 	}
@@ -171,11 +166,11 @@ public class Controller {
 		return vennJson;
 	}
 
-	@GetMapping("/userlist")
-	public String getUserlist() {
-		List<Chart> chartList = chartRepository.findAll();
-		System.out.println(chartList.size());
-		for (Chart i : chartList) System.out.println(">>>>" + i.getUser_id());
-		return "sr";
-	}
+//	@GetMapping("/userlist")
+//	public String getUserlist() {
+//		List<Chart> chartList = chartRepository.findAll();
+//		System.out.println(chartList.size());
+//		for (Chart i : chartList) System.out.println(">>>>" + i.getUser_id());
+//		return "sr";
+//	}
 }

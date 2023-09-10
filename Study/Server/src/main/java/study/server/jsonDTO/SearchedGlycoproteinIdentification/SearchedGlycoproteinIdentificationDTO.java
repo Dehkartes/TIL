@@ -1,6 +1,9 @@
 package study.server.jsonDTO.SearchedGlycoproteinIdentification;
 
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import lombok.*;
+
+import java.util.HashMap;
 import java.util.List;
 
 @Builder
@@ -9,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SearchedGlycoproteinIdentificationDTO {
-	Hcd hcd;
+	List<Hcd> hcd;
 	Cid cid;
 	Etd etd;
 }
