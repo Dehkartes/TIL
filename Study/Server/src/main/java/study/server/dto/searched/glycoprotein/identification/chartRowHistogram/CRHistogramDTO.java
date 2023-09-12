@@ -9,7 +9,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ChartRowHistogramDTO {
+public class CRHistogramDTO {
 	List<Hcd> hcd;
 	List<Cid> cid;
 	List<Etd> etd;

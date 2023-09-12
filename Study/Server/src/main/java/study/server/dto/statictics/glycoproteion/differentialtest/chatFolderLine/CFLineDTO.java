@@ -1,4 +1,4 @@
-package study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn;
+package study.server.dto.statictics.glycoproteion.differentialtest.chatFolderLine;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -7,6 +7,7 @@ import study.server.dto.statictics.glycoproteion.common.Chart;
 import study.server.dto.statictics.glycoproteion.common.Title;
 import study.server.dto.statictics.glycoproteion.common.XAxis;
 import study.server.dto.statictics.glycoproteion.common.YAxis;
+import study.server.dto.statictics.glycoproteion.common.SeriesData;
 
 import java.util.List;
 
@@ -23,13 +24,13 @@ import java.util.List;
 		"plotOptions",
 		"series"
 })
-public class ChartFolderColumnDTO {
+public class CFLineDTO {
 	private Chart chart;
 	private Title title;
 	@JsonProperty("xAxis")
 	private XAxis xAxis;
 	@JsonProperty("yAxis")
 	private YAxis yAxis;
-	private PlotOptions plotOptions;
+	private CFLinePlotOption plotOptions;
 	private List<SeriesData> series;
 }

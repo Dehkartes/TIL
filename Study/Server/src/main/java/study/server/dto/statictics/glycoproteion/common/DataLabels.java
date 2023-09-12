@@ -1,4 +1,4 @@
-package study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn;
+package study.server.dto.statictics.glycoproteion.common;
 
 import lombok.*;
 
@@ -8,5 +8,5 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DataLabels {
-	Boolean enabled;
+	private boolean enabled;
 }

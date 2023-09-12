@@ -29,26 +29,6 @@ public class NetworkProteinController {
 
 	@GetMapping("/regulate/chart/folder/cytoscape")
 	public String getRegulateChartFolderCytoscape() throws JsonProcessingException {
-		List<Nodes> nodeData = new ArrayList<>();
-		NodeData data = NodeData.builder().
-				id("Psmd7").
-				foldChange(0.68).
-				name("Psmd7").
-				weight(0.0).
-				color("#FFB8B8").
-				protein("sp|P26516|PSMD7_MOUSE").
-				build();
-		Nodes nod = Nodes.builder().
-				data(data).
-				build();
-		nodeData.add(nod);
-		RCFCytoscapeDTO inst =
-				RCFCytoscapeDTO.builder()
-				.nodes(nodeData).build();
-
-		ObjectMapper objectMapper = new ObjectMapper();
-		String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(inst);
-		System.out.println(json);
-		return json;
+		return networkProteinService.getRCFcytoscapeJSON();
 	}
 }

@@ -1,4 +1,4 @@
-package study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn;
+package study.server.dto.statictics.glycoproteion.common;
 
 import lombok.*;
 

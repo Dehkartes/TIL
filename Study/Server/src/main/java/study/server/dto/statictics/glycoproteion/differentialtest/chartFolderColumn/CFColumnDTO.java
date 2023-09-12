@@ -1,10 +1,9 @@
-package study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap;
+package study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.*;
-import study.server.dto.statictics.glycoproteion.common.Title;
-import study.server.dto.statictics.glycoproteion.common.XAxis;
+import study.server.dto.statictics.glycoproteion.common.*;
 
 import java.util.List;
 
@@ -18,16 +17,16 @@ import java.util.List;
 		"title",
 		"xAxis",
 		"yAxis",
-		"colorAxis",
+		"plotOptions",
 		"series"
 })
-public class ChartFolderHeatmapDTO {
+public class CFColumnDTO {
 	private Chart chart;
 	private Title title;
 	@JsonProperty("xAxis")
 	private XAxis xAxis;
 	@JsonProperty("yAxis")
 	private YAxis yAxis;
-	private ColorAxis colorAxis;
+	private PlotOptions plotOptions;
 	private List<SeriesData> series;
 }

@@ -2,15 +2,15 @@ package study.server.dto.statictics.glycoproteion.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
+import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn.Column;
 
-@SuperBuilder
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Chart {
-	private String type;
-	private String zoomType;
+public class PlotOptions {
+	private Column column;
+	private Series series;
 }

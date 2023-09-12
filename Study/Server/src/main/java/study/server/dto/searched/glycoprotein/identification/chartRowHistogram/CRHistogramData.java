@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ChartRowHistogramData {
+public class CRHistogramData {
 	private double x;
 	private double y;
 	private String labels;

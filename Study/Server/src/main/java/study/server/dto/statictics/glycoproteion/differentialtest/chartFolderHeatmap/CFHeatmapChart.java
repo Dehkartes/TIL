@@ -9,6 +9,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Chart extends study.server.dto.statictics.glycoproteion.common.Chart {
+public class CFHeatmapChart extends study.server.dto.statictics.glycoproteion.common.Chart {
 	private int plotBorderWidth;
 }

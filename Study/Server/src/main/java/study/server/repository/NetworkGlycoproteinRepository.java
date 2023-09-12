@@ -29,6 +29,20 @@ public class NetworkGlycoproteinRepository {
 
 		nodeData.add(nod);
 
+		NodeData data2 = NodeData.builder().
+				id("Capn1").
+				foldChange(-1.23).
+				name("Capn1").
+				weight(0.01).
+				color("#8181FF").
+				protein("sp|O35350|CAN1_MOUSE").
+				build();
+		Nodes nod2 = Nodes.builder().
+				data(data2).
+				build();
+
+		nodeData.add(nod2);
+
 		CCFCytoscapeDTO inst =
 				CCFCytoscapeDTO
 						.builder()
@@ -53,6 +67,20 @@ public class NetworkGlycoproteinRepository {
 				.build();
 
 		nodeData.add(nod);
+
+		NodeData data2 = NodeData.builder().
+				id("Capn1").
+				foldChange(-1.23).
+				name("Capn1").
+				weight(0.01).
+				color("#8181FF").
+				protein("sp|O35350|CAN1_MOUSE").
+				build();
+		Nodes nod2 = Nodes.builder().
+				data(data2).
+				build();
+
+		nodeData.add(nod2);
 
 		RCFCytoscapeDTO inst = RCFCytoscapeDTO
 				.builder()

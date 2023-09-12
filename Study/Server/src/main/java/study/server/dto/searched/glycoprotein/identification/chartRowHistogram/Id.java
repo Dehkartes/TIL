@@ -12,5 +12,5 @@ import java.util.List;
 public class Id {
 	private String name;
 	private String color;
-	private List <ChartRowHistogramData> data;
+	private List <CRHistogramData> data;
 }
