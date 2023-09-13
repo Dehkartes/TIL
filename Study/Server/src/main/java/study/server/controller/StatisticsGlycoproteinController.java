@@ -1,25 +1,11 @@
 package study.server.controller;
 
-import ch.qos.logback.classic.spi.IThrowableProxy;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import study.server.dto.statictics.glycoproteion.common.Chart;
-import study.server.dto.statictics.glycoproteion.common.Title;
-import study.server.dto.statictics.glycoproteion.common.XAxis;
-import study.server.dto.statictics.glycoproteion.common.YAxis;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn.*;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.CFHeatmapDTO;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.ColorAxis;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.ColorAxisLabels;
-import study.server.repository.StatisticsGlycoproteinRepository;
 import study.server.service.StatisticsGlycoproteinService;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -61,5 +47,25 @@ public class StatisticsGlycoproteinController {
 	@GetMapping("/normalization/chart/group/afterboxplot2")
 	public String getCGAfterboxplot2() throws JsonProcessingException {
 		return statisticsGlycoproteinService.getCGAfterBoxPlot2Json();
+	}
+
+	@GetMapping("/normalization/chart/group/beforeboxplot1")
+	public String getCGBeforeBoxplot1() throws JsonProcessingException {
+		return statisticsGlycoproteinService.CGBeforeBoxplot1Json();
+	}
+
+	@GetMapping("/normalization/chart/single/aftercolumn2")
+	public String getCSAfterColumn2() throws JsonProcessingException {
+		return statisticsGlycoproteinService.getCSAfterColumn2Json();
+	}
+
+	@GetMapping("/normalization/chart/single/beforecolumn1")
+	public String getCSBeforeColumn1() throws JsonProcessingException {
+		return statisticsGlycoproteinService.getCSBeforeColumn1Json();
+	}
+
+	@GetMapping("/processing/chart/group/venn")
+	public String getCSCGVennSeriesElementDTO() throws JsonProcessingException {
+		return statisticsGlycoproteinService.getCGVennJson();
 	}
 }

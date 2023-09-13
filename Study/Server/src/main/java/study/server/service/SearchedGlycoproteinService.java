@@ -9,13 +9,11 @@ import study.server.repository.SearchedGlycoproteinRepository;
 
 @Service
 @RequiredArgsConstructor
-public class SearchedGlycoproteinService {
+public class SearchedGlycoproteinService extends JsonService {
 	private final SearchedGlycoproteinRepository searchedGlycoproteinRepository;
 
 	public String getCRHistogramJSON() throws JsonProcessingException {
-		CRHistogramDTO inst = searchedGlycoproteinRepository.getCRHistogramDTO();
-		ObjectMapper objectMapper = new ObjectMapper();
-		return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(inst);
+		return getJsonString(searchedGlycoproteinRepository.getCRHistogramDTO());
 	}
 
 }

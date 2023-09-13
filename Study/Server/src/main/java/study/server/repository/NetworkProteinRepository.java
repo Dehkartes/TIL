@@ -2,8 +2,8 @@ package study.server.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.stereotype.Repository;
-import study.server.dto.network.common.NodeData;
-import study.server.dto.network.common.Nodes;
+import study.server.dto.network.element.NodeData;
+import study.server.dto.network.element.Nodes;
 import study.server.dto.network.protein.correlated.chartFolderCytoscape.CCFCytoscapeDTO;
 import study.server.dto.network.protein.regulate.chartFolderCytoscape.RCFCytoscapeDTO;
 

@@ -1,28 +1,32 @@
 package study.server.repository;
 
 import org.springframework.stereotype.Repository;
-import study.server.dto.statictics.glycoproteion.common.*;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderColumn.*;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.CFHeatmapChart;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.CFHeatmapDTO;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.ColorAxis;
-import study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.ColorAxisLabels;
-import study.server.dto.statictics.glycoproteion.differentialtest.chatFolderLine.CFLineDTO;
-import study.server.dto.statictics.glycoproteion.differentialtest.chatFolderLine.CFLinePlotOption;
-import study.server.dto.statictics.glycoproteion.differentialtest.chatFolderScatter.CFScatterDTO;
-import study.server.dto.statictics.glycoproteion.differentialtest.chatFolderScatter.CFScatterSeriesData;
-import study.server.dto.statictics.glycoproteion.differentialtest.chatFolderScatter.CFScatterSeriesDataData;
-import study.server.dto.statictics.glycoproteion.normalization.chartGroupAfterBoxplot2.CGAfterBoxPlot2DTO;
-import study.server.dto.statictics.glycoproteion.normalization.common.CFBoxPlotSeriesData;
-import study.server.dto.statictics.glycoproteion.normalization.common.CFBoxPlotSeriesDataData;
-import study.server.dto.statictics.glycoproteion.normalization.chartFolderAfterBoxplot2.CFAfterBoxPlot2DTO;
-import study.server.dto.statictics.glycoproteion.normalization.chartFolderBeforeBoxplot1.CFBeforeBoxPlot1DTO;
+import study.server.dto.statictics.element.*;
+import study.server.dto.statictics.glycoprotein.differentialtest.chartFolderColumn.*;
+import study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.CFHeatmapChart;
+import study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.CFHeatmapDTO;
+import study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.ColorAxis;
+import study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.ColorAxisLabels;
+import study.server.dto.statictics.glycoprotein.differentialtest.chatFolderLine.CFLineDTO;
+import study.server.dto.statictics.glycoprotein.differentialtest.chatFolderLine.CFLinePlotOption;
+import study.server.dto.statictics.glycoprotein.differentialtest.chatFolderScatter.CFScatterDTO;
+import study.server.dto.statictics.glycoprotein.differentialtest.chatFolderScatter.CFScatterSeriesData;
+import study.server.dto.statictics.glycoprotein.differentialtest.chatFolderScatter.CFScatterSeriesDataData;
+import study.server.dto.statictics.glycoprotein.normalization.chartGroupAfterBoxplot2.CGAfterBoxPlot2DTO;
+import study.server.dto.statictics.glycoprotein.normalization.chartGroupBeforeBoxplot1.CGBeforeBoxplot1DTO;
+import study.server.dto.statictics.glycoprotein.normalization.chartFolderAfterBoxplot2.CFAfterBoxPlot2DTO;
+import study.server.dto.statictics.glycoprotein.normalization.chartFolderBeforeBoxplot1.CFBeforeBoxPlot1DTO;
+import study.server.dto.statictics.glycoprotein.normalization.chartSingleAfterColumn2.CSAfterColumn2DTO;
+import study.server.dto.statictics.glycoprotein.normalization.chartSingleBeforeColumn1.CSBeforeColumn1DTO;
+import study.server.dto.statictics.glycoprotein.processing.chartGroupVenn.CGVennDTO;
+import study.server.dto.statictics.glycoprotein.processing.chartGroupVenn.CGVennSeriesElement;
+import study.server.dto.statictics.glycoprotein.processing.chartGroupVenn.CGVennSeriesDataElement;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class StatisticsGlycoproteinRepository {
+public class StatisticsGlycoproteinRepository<CGVennDTOSeriesElement> {
 	public CFColumnDTO getCFColumnDTO() {
 		Chart chart = Chart.builder().type("column").build();
 		Title title = Title.builder().text("Distribution by Glycan_Types").build();
@@ -66,8 +70,8 @@ public class StatisticsGlycoproteinRepository {
 		List<String> yAxisCategories = new ArrayList<>();
 		yAxisCategories.add("Area_S1");
 		Title yAxisTItle = Title.builder().text("").build();
-		study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.YAxis yAxis =
-				study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.YAxis.builder().categories(yAxisCategories).title(yAxisTItle).build();
+		study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.YAxis yAxis =
+				study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.YAxis.builder().categories(yAxisCategories).title(yAxisTItle).build();
 		List<List<Object>> stopList = new ArrayList<>();
 		List<Object> stopItem = new ArrayList<>();
 		stopItem.add(0);
@@ -76,13 +80,13 @@ public class StatisticsGlycoproteinRepository {
 		ColorAxisLabels colorAxisLabels = ColorAxisLabels.builder().format("{value:.2f}").build();
 		ColorAxis colorAxis = ColorAxis.builder().min(-2).max(2).minColor("#0000FF").maxColor("#FF0000").stops(stopList).startOnTick(false).endOnTick(false).
 				borderColor("none").labels(colorAxisLabels).build();
-		List<study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.SeriesData> seriesDataList = new ArrayList<>();
+		List<study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.SeriesData> seriesDataList = new ArrayList<>();
 		List<Object> datalist = new ArrayList<>();
 		datalist.add(0);
 		datalist.add(0);
 		datalist.add(1.37);
-		study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.SeriesData seriesData =
-				study.server.dto.statictics.glycoproteion.differentialtest.chartFolderHeatmap.SeriesData.builder().name("Heatmap").borderWidth(0).
+		study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.SeriesData seriesData =
+				study.server.dto.statictics.glycoprotein.differentialtest.chartFolderHeatmap.SeriesData.builder().name("Heatmap").borderWidth(0).
 						data(datalist).turboThreshold(456).build();
 		seriesDataList.add(seriesData);
 
@@ -341,6 +345,184 @@ public class StatisticsGlycoproteinRepository {
 						.categories(catagoris)
 						.build())
 				.series(seriesDataList)
+				.build();
+
+		return inst;
+	}
+
+	public CGBeforeBoxplot1DTO getCGBeforeBoxplot1DTO() {
+		List<String> catagoris = new ArrayList<>();
+		catagoris.add("1_1 Intensity");
+		catagoris.add("1_2 Intensity");
+
+		List<CFBoxPlotSeriesData> seriesDataList= new ArrayList<>();
+		List<CFBoxPlotSeriesDataData> seriesDataDataList = new ArrayList<>();
+
+		seriesDataDataList.add(CFBoxPlotSeriesDataData.builder()
+				.name("1_1 Intensity")
+				.x(0)
+				.low(-1.2)
+				.q1(4.29)
+				.median(5.74)
+				.q3(7.2)
+				.high(17.55)
+				.fillColor("#7cb5ec")
+				.build());
+		seriesDataDataList.add(CFBoxPlotSeriesDataData.builder()
+				.name("1_2 Intensity")
+				.x(1)
+				.low(-0.79)
+				.q1(4.36)
+				.median(5.73)
+				.q3(7.23)
+				.high(17.0)
+				.fillColor("#7cb5ec")
+				.build());
+
+		seriesDataList.add(CFBoxPlotSeriesData.builder().data(seriesDataDataList).build());
+
+		CGBeforeBoxplot1DTO inst = CGBeforeBoxplot1DTO.builder()
+				.chart(Chart.builder()
+						.type("boxplot")
+						.build())
+				.plotOptions(PlotOptions.builder()
+						.series(Series.builder()
+								.pointWidth(100)
+								.build())
+						.build())
+				.title(Title.builder().
+						text("before_central_tendency_correction_boxplot")
+						.build())
+				.legend(Legend.builder()
+						.enabled("false")
+						.build())
+				.xAxis(XAxis.builder()
+						.categories(catagoris)
+						.build())
+				.series(seriesDataList)
+				.build();
+
+		return inst;
+	}
+
+	public CSAfterColumn2DTO getCSAfterColumn2DTO() {
+		List<Integer> seriesData = new ArrayList<>();
+		seriesData.add(9);
+		seriesData.add(59);
+		List<CSColumn2SeriesData> series = new ArrayList<>();
+		series.add(CSColumn2SeriesData.builder()
+				.name("Histogram")
+				.data(seriesData)
+				.pointStart(-1.2209159452867755)
+				.pointInterval(1.8768498218272325)
+				.build());
+		series.add(CSColumn2SeriesData.builder()
+				.name("Histogram")
+				.data(seriesData)
+				.pointStart(-1.2209159452867755)
+				.pointInterval(1.8768498218272325)
+				.build());
+
+		CSAfterColumn2DTO inst = CSAfterColumn2DTO.builder()
+				.chart(Chart.builder()
+						.type("colum")
+						.build())
+				.title(Title.builder()
+						.text("after_norm 1_1 Intensity")
+						.build())
+				.xAxis(XAxis.builder()
+						.title(Title.builder()
+								.text("1_1 Intensity")
+								.build())
+						.build())
+				.yAxis(YAxis.builder()
+						.title(Title.builder()
+								.text("Count")
+								.build())
+						.build())
+				.series(series)
+				.build();
+
+		return inst;
+	}
+
+	public CSBeforeColumn1DTO getCSBeforeColumn1DTO() {
+		List<Integer> seriesData = new ArrayList<>();
+		seriesData.add(9);
+		seriesData.add(59);
+		List<CSColumn2SeriesData> series = new ArrayList<>();
+		series.add(CSColumn2SeriesData.builder()
+				.name("Histogram")
+				.data(seriesData)
+				.pointStart(-1.2209159452867755)
+				.pointInterval(1.8768498218272325)
+				.build());
+		series.add(CSColumn2SeriesData.builder()
+				.name("Histogram")
+				.data(seriesData)
+				.pointStart(-1.2209159452867755)
+				.pointInterval(1.8768498218272325)
+				.build());
+
+		CSBeforeColumn1DTO inst = CSBeforeColumn1DTO.builder()
+				.chart(Chart.builder()
+						.type("colum")
+						.build())
+				.title(Title.builder()
+						.text("after_norm 1_1 Intensity")
+						.build())
+				.xAxis(XAxis.builder()
+						.title(Title.builder()
+								.text("1_1 Intensity")
+								.build())
+						.build())
+				.yAxis(YAxis.builder()
+						.title(Title.builder()
+								.text("Count")
+								.build())
+						.build())
+				.series(series)
+				.build();
+
+		return inst;
+	}
+
+	public CGVennDTO getCGVennDTO() {
+
+
+		List<CGVennSeriesElement> cgVennSeriesElementList = new ArrayList<>();
+		List<CGVennSeriesDataElement> cGvennSeriesDataElementList = new ArrayList<>();
+		List<String> setList1 = new ArrayList<>();
+		setList1.add("Area_S1");
+		setList1.add("Area_S1");
+		cGvennSeriesDataElementList.add(CGVennSeriesDataElement.builder()
+				.name("<b>245</b><br>34.36%")
+				.sets(setList1)
+				.value(449)
+				.build());
+		List<String> setList2 = new ArrayList<>();
+		setList2.add("Area_S2");
+		setList2.add("Area_S2");
+		cGvennSeriesDataElementList.add(CGVennSeriesDataElement.builder()
+				.name("<b>214</b><br>30.01%")
+				.sets(setList2)
+				.value(418)
+				.build());
+		cgVennSeriesElementList.add(CGVennSeriesElement.builder()
+						.data(cGvennSeriesDataElementList)
+				.build());
+		cgVennSeriesElementList.add(CGVennSeriesElement.builder()
+				.data(cGvennSeriesDataElementList)
+				.build());
+
+		CGVennDTO inst = CGVennDTO.builder()
+				.chart(Chart.builder()
+						.type("venn")
+						.build())
+				.title(Title.builder()
+						.text("Venn Diagram")
+						.build())
+				.series(cgVennSeriesElementList)
 				.build();
 
 		return inst;

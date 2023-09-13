@@ -10,18 +10,14 @@ import study.server.repository.NetworkProteinRepository;
 
 @Service
 @RequiredArgsConstructor
-public class NetworkProteinService {
+public class NetworkProteinService extends JsonService {
 	private final NetworkProteinRepository NetworkProteinRepository;
 
 	public String getCCFCytoscapeJSON() throws JsonProcessingException {
-		CCFCytoscapeDTO inst = NetworkProteinRepository.getCCFCytoscapeDTO();
-		ObjectMapper objectMapper = new ObjectMapper();
-		return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(inst);
+		return getJsonString(NetworkProteinRepository.getCCFCytoscapeDTO());
 	}
 
 	public String getRCFcytoscapeJSON() throws JsonProcessingException {
-		RCFCytoscapeDTO inst = NetworkProteinRepository.getRCFCytoscapeDTO();
-		ObjectMapper objectMapper = new ObjectMapper();
-		return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(inst);
+		return getJsonString(NetworkProteinRepository.getRCFCytoscapeDTO());
 	}
 }

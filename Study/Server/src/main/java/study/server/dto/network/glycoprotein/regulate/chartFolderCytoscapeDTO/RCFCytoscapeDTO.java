@@ -1,7 +1,7 @@
 package study.server.dto.network.glycoprotein.regulate.chartFolderCytoscapeDTO;
 
 import lombok.*;
-import study.server.dto.network.common.Nodes;
+import study.server.dto.network.element.Nodes;
 
 import java.util.List;
 
