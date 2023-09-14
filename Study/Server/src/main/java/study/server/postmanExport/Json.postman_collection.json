@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "ea8f2b70-442f-467b-b90d-157df16f4645",
+		"name": "Json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27448161"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "/network/glycoprotein/correlated/chart/folder/cytoscape",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/network/glycoprotein/regulate/chart/folder/cytoscape",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/network/protein/correlated/chart/folder/cytoscape",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/network/protein/regulate/chart/folder/cytoscape",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Searched",
+			"item": [
+				{
+					"name": "/searched/glycoprotein/identification/chart/row/histogram/",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/searched/glycoprotein/identification/chart/row/position/",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/searched/glycoprotein/quantification/chart/row/CRBar/",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/searched/glycoprotein/quantification/chart/row/position/",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statistics",
+			"item": [
+				{
+					"name": "/statistics/glycoprotein/differentialtest/chart/folder/column",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/differentialtest/chart/folder/Heatmap",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/differentialtest/chart/folder/line",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/differentialtest/chart/folder/scatter",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/folder/beforeboxplot1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/group/afterboxplot2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/single/aftercolumn2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/single/beforecolumn1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/glycoprotein/normalization/chart/single/beforecolumn1 Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistics/glycoprotein/normalization/chart/folder/afterboxplot2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistics",
+								"glycoprotein",
+								"normalization",
+								"chart",
+								"folder",
+								"afterboxplot2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/differentialtest/chart/folder/hetamp",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/differentialtest/chart/folder/scatter",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/differentialtest/chart/folder/afterboxplot2",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/differentialtest/chart/folder/afterboxplot2 Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/group/afterboxplot2",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/group/beforeboxplot1",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/single/aftercolumn2",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/single/beforecolumn1",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/group/venn1",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/group/venn2",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/single/qqplotafter",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/statistics/protein/normalization/chart/group/qqplotbefore",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "ip",
+			"value": "statistics"
+		},
+		{
+			"key": "domain",
+			"value": "http://localhost:8080"
+		}
+	]
+}

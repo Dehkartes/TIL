@@ -20,6 +20,21 @@ public class SearchedGlycoproteinController {
 	private final SearchedGlycoproteinService searchedGlycoproteinService;
 	@GetMapping("/identification/chart/row/histogram/")
 	public String getCRHistogram() throws JsonProcessingException {
-		return searchedGlycoproteinService.getCRHistogramJSON();
+		return searchedGlycoproteinService.getCRHistogramJson();
+	}
+
+	@GetMapping("/identification/chart/row/position/")
+	public String CRPosition() throws JsonProcessingException {
+		return searchedGlycoproteinService.getCRPositionJson();
+	}
+
+	@GetMapping("/quantification/chart/row/bar/")
+	public String CRBar() throws JsonProcessingException {
+		return searchedGlycoproteinService.getCRBarJson();
+	}
+
+	@GetMapping("/quantification/chart/row/position/")
+	public String QCRPosition () throws JsonProcessingException {
+		return searchedGlycoproteinService.getQCRPositionJson();
 	}
 }

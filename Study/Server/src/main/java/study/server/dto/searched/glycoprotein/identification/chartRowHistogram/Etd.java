@@ -2,6 +2,7 @@ package study.server.dto.searched.glycoprotein.identification.chartRowHistogram;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import lombok.*;
+import study.server.dto.searched.element.HistogramElement;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,10 +13,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Etd {
-	private HashMap<String, List<Id>> id;
+	private HashMap<String, List<HistogramElement>> id;
 
 	@JsonAnyGetter
-	public HashMap<String, List<Id>> getId() {
+	public HashMap<String, List<HistogramElement>> getId() {
 		return id;
 	}
 }

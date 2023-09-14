@@ -12,8 +12,20 @@ import study.server.repository.SearchedGlycoproteinRepository;
 public class SearchedGlycoproteinService extends JsonService {
 	private final SearchedGlycoproteinRepository searchedGlycoproteinRepository;
 
-	public String getCRHistogramJSON() throws JsonProcessingException {
+	public String getCRHistogramJson() throws JsonProcessingException {
 		return getJsonString(searchedGlycoproteinRepository.getCRHistogramDTO());
+	}
+
+	public String getCRPositionJson() throws JsonProcessingException {
+		return getJsonString(searchedGlycoproteinRepository.getCRPositionDTO());
+	}
+
+	public String getCRBarJson() throws JsonProcessingException {
+		return getJsonString(searchedGlycoproteinRepository.getCRBarDTO());
+	}
+
+	public String getQCRPositionJson() throws JsonProcessingException {
+		return getJsonString(searchedGlycoproteinRepository.getQCRPositionDTO());
 	}
 
 }

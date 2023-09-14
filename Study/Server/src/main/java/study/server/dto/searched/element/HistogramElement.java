@@ -1,4 +1,4 @@
-package study.server.dto.searched.glycoprotein.identification.chartRowHistogram;
+package study.server.dto.searched.element;
 
 import lombok.*;
 import java.util.List;
@@ -9,8 +9,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Id {
+public class HistogramElement {
 	private String name;
 	private String color;
-	private List <CRHistogramData> data;
+	private List <HistogramData> data;
 }

@@ -1,4 +1,4 @@
-package study.server.dto.searched.glycoprotein.identification.chartRowHistogram;
+package study.server.dto.searched.element;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CRHistogramData {
+public class HistogramData {
 	private double x;
 	private double y;
 	private String labels;
