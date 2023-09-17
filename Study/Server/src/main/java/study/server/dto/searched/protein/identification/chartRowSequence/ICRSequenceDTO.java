@@ -11,5 +11,5 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ICRSequenceDTO {
-	private List<HashMap<String, Object>> protein_sequence;
+	private List<Object> protein_sequence;
 }

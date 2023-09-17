@@ -12,5 +12,5 @@ import java.util.HashMap;
 @AllArgsConstructor
 public class ICRSequenceData1 {
 	private HashMap<String,Integer> protein_length;
-	private HashMap<String,Integer> protein_sequence;
+	private HashMap<String,String> protein_sequence;
 }

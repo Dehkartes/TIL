@@ -16,4 +16,19 @@ public class SearchedProteinController {
 	public String getCRHistogram() throws JsonProcessingException {
 		return searchedGlycoproteinService.getICRHistogramJson();
 	}
+
+	@GetMapping("/identification/chart/row/sequence/")
+	public String getICRSequence() throws JsonProcessingException {
+		return searchedGlycoproteinService.getICRSequenceJson();
+	}
+
+	@GetMapping("/quantification/chart/row/bar/")
+	public String getQCRBar() throws JsonProcessingException {
+		return searchedGlycoproteinService.getQCRBarJson();
+	}
+
+	@GetMapping("/quantification/chart/row/position/")
+	public String getQCRPosition() throws JsonProcessingException {
+		return searchedGlycoproteinService.getQCRPositionJson();
+	}
 }
