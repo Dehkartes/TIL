@@ -53,22 +53,22 @@ public class StatisticsProteinController {
 		return statisticsProteinService.getCSBeforeColumn1Json();
 	}
 
-	@GetMapping("/normalization/chart/group/venn1")
+	@GetMapping("/processing/chart/group/venn1")
 	public String getCGVenn1() throws JsonProcessingException {
 		return statisticsProteinService.getCGVenn1Json();
 	}
 
-	@GetMapping("/normalization/chart/group/venn2")
+	@GetMapping("/processing/chart/group/venn2")
 	public String getCGVenn2() throws JsonProcessingException {
 		return statisticsProteinService.getCGVenn2Json();
 	}
 
-	@GetMapping("/normalization/chart/single/qqplotafter")
+	@GetMapping("/processing/chart/single/qqplotafter")
 	public String getQqplotafter() throws JsonProcessingException {
 		return statisticsProteinService.getCSQqplotAfterDTO();
 	}
 
-	@GetMapping("/normalization/chart/group/qqplotbefore")
+	@GetMapping("/processing/chart/single/qqplotbefore")
 	public String getQqplotbefore() throws JsonProcessingException {
 		return statisticsProteinService.getCSQqplotBeforeDTO();
 	}
