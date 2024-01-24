@@ -14,7 +14,7 @@ public class UserController {
 
 	@GetMapping("/test")
 	public UserDTO getTest() {
-		UserDTO user = new UserDTO("test", 2);
+		UserDTO user = new UserDTO("test", 3);
 		return user;
 	}
 }
