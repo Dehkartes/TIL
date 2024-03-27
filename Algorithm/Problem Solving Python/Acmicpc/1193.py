@@ -1,3 +1,6 @@
+import time
+
+start = time.time()
 n = int(input())
 mx = 1
 level = 1
@@ -24,4 +27,7 @@ else:
 		col += 1
 		mx -= 1
 
-print(f"{row}/{col}")		
+print(f"{row}/{col}")
+end = time.time()
+
+print(end-start)
