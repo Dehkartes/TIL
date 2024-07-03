@@ -1,5 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudio,flask,python,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,flask,python,visualstudiocode
+### node.js ###
+Express/data/
 
 ### Flask ###
 instance/*
