@@ -1,103 +1,98 @@
-import torch
-import torchvision
-import torchvision.transforms as transforms
-import os
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-os.environ["TORCH_USE_CUDA_DSA"] = '1'
+# %% [markdown]
+# # MNLI 문제 해결을 위한 모델 학습
 
-transform = transforms.ToTensor()
+# %% [markdown]
+# ## 라이브러리 설치 및 임포트
 
-trainset = torchvision.datasets.MNIST(
-	root='./data',
-	train=True,
-	download=True,
-	transform=transform
+# HuggingFace의 transformers 및 datasets 라이브러리 설치
+# !pip install transformers datasets evaluate
+
+import numpy as np
+import evaluate
+from datasets import load_dataset
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
+import pandas as pd
+
+# %% [markdown]
+# ## 데이터셋 로드 및 전처리
+
+# MNLI 데이터셋 로드
+dataset = load_dataset("nyu-mll/glue", "mnli")
+
+# Train split만 사용하며, validation data는 train split에서 따로 분리
+train_valid_split = dataset['train'].train_test_split(test_size=0.1)
+train_dataset = train_valid_split['train']
+valid_dataset = train_valid_split['test']
+
+# Pre-trained tokenizer 로드
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+# 입력 데이터를 tokenizer로 변환하는 함수 정의
+def preprocess_function(examples):
+    return tokenizer(examples['premise'], examples['hypothesis'], truncation=True)
+
+# 데이터셋에 tokenizer 적용
+train_dataset = train_dataset.map(preprocess_function, batched=True)
+valid_dataset = valid_dataset.map(preprocess_function, batched=True)
+test_dataset = dataset['validation_matched'].map(preprocess_function, batched=True)
+
+# %% [markdown]
+# ## 모델 준비 및 학습 설정
+
+# BERT 모델 로드 (Sequence Classification)
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=3)
+
+# 학습 설정
+training_args = TrainingArguments(
+    output_dir='./results',
+    evaluation_strategy="epoch",
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    num_train_epochs=3,
+    weight_decay=0.01,
+    logging_dir='./logs',
+    logging_steps=50,
+    save_strategy="epoch",
+    load_best_model_at_end=True,
 )
 
-testSet = torchvision.datasets.MNIST(
-	root='./data',
-	train=False,
-	download=True,
-	transform=transform
+# 정확도 측정 함수 정의
+accuracy = evaluate.load("accuracy")
+
+def compute_metrics(eval_pred):
+    logits, labels = eval_pred
+    predictions = np.argmax(logits, axis=-1)
+    return accuracy.compute(predictions=predictions, references=labels)
+
+# Trainer 객체 생성
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=valid_dataset,
+    compute_metrics=compute_metrics,
+    tokenizer=tokenizer,
 )
 
-from matplotlib import pyplot as plt
+# %% [markdown]
+# ## 모델 학습
 
-print(len(trainset))
-print(trainset[0][0].shape, trainset[0][1])
-plt.imshow(trainset[0][0][0], cmap='gray')
+# 모델 학습 수행
+trainer.train()
 
-print(len(testSet))
-print(testSet[0][0].shape, testSet[0][1]) # testSet[데이터 인덱스][0: 데이터, 1: 라벨]
-plt.imshow(testSet[0][0][0], cmap='gray')
+# %% [markdown]
+# ## 모델 평가
 
-batch_size = 64
+# validation_matched 데이터셋에 대한 성능 평가
+eval_results = trainer.evaluate(test_dataset)
 
-trainloader = torch.utils.data.DataLoader(
-	trainset,
-	batch_size=batch_size,
-	shuffle=True
-)
+# 결과를 DataFrame으로 변환해 보기 좋게 출력
+eval_results_df = pd.DataFrame([eval_results])
+print(eval_results_df)
 
-testLoader = torch.utils.data.DataLoader(
-	testSet,
-	batch_size=batch_size,
-	shuffle=False
-)
-
-dataiter = iter(trainloader)
-images, labels = next(dataiter)
-print(images.shape, labels.shape)
-
-from torch import nn
-
-
-class Model(nn.Module): # nn.Modlue 상속
-	def __init__(self, input_dim, n_dim):
-		super().__init__()
-
-		self.layer1 = nn.Linear(input_dim, n_dim)
-		self.layer2 = nn.Linear(n_dim, n_dim)
-		self.layer3 = nn.Linear(n_dim, 10)
-
-		self.act = nn.ReLU()
-
-	def forward(self, x):
-		x = torch.flatten(x, start_dim=1)
-		x = self.act(self.layer1(x))
-		x = self.act(self.layer2(x))
-		x = self.act(self.layer3(x))
-		return x
-
-
-model = Model(28 * 28 * 1, 1024)
-
-from torch.optim import SGD
-
-lr = 0.001
-model = model.to('cuda')
-
-optimizer = SGD(model.parameters(), lr=lr)
-
-# 손실함수 정의 (criterion ?)
-
-lossFunction = nn.CrossEntropyLoss()
-n_epochs = 100
-print(batch_size)
-for epoch in range(n_epochs):
-	total_loss = 0.
-	for data in trainloader:
-		model.zero_grad()
-		inputs, labels = data
-		inputs, labels = inputs.to('cuda'), labels.to('cuda')
-
-		preds = model(inputs)
-		loss = lossFunction(preds, labels)
-		#loss = (preds[:, 0] - labels).pow(2).mean() #MSE
-		loss.backward()
-		optimizer.step()
-
-		total_loss += loss.item()
-
-	print(f"Epoch {epoch:3d} | Loss: {total_loss}")
+# 정확도 50% 이상 확인
+if eval_results['eval_accuracy'] > 0.5:
+    print(f"Validation accuracy is {eval_results['eval_accuracy']:.2f}, which is above 50%")
+else:
+    print(f"Validation accuracy is {eval_results['eval_accuracy']:.2f}, which is below 50%")
