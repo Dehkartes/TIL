@@ -41,6 +41,9 @@ class Arguments:
 parser = HfArgumentParser((Arguments, TrainingArguments))
 args, training_args = parser.parse_args_into_dataclasses()
 
+training_args.eval_strategy="steps"
+training_args.eval_steps = 100
+
 logger = logging.getLogger()
 
 logging.basicConfig(
@@ -131,12 +134,17 @@ with training_args.main_process_first(desc="grouping texts together"):
         num_proc=args.num_workers
     )
     
-train_dataset = lm_datasets["train"]
+
+# train_dataset = lm_datasets["train"]
+
+datasets_split = lm_datasets["train"].train_test_split(test_size=0.2)
+train_dataset, validation_datasets = datasets_split['train'], datasets_split['test']
 
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
+    eval_dataset=validation_datasets,
     tokenizer=tokenizer,
     data_collator=default_data_collator
 )
@@ -155,4 +163,8 @@ trainer.save_model()
 metrics = train_result.metrics
 trainer.log_metrics("train", metrics)
 trainer.save_metrics("train", metrics)
+
+eval_metrics = trainer.evaluate()
+trainer.log_metrics("eval", eval_metrics)
+trainer.save_metrics("eval", eval_metrics)
 trainer.save_state()
