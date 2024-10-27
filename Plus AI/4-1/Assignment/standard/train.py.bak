@@ -38,25 +38,11 @@ class Arguments:
     block_size: int = field(default=1024)  # Fine-tuning에 사용할 input text의 길이
     num_workers: Optional[int] = field(default=None)  # Data를 업로드하거나 전처리할 때 사용할 worker 숫자
     
-args = Arguments(
-	model_name_or_path="openai-community/openai-gpt",
-	dataset_name="wikitext",
-	dataset_config_name="wikitext-2-raw-v1"
+parser = HfArgumentParser((Arguments, TrainingArguments))
+args, training_args = parser.parse_args_into_dataclasses()
 
-)
-
-training_args = TrainingArguments(
-    output_dir="/tmp/test-clm",
-    save_total_limit=1,
-    logging_steps=100,
-    eval_steps=100,
-    do_train=True,
-    do_eval=True,
-    per_device_train_batch_size=8,
-    logging_strategy="steps",
-    evaluation_strategy="steps",
-    overwrite_output_dir=True
-    )
+training_args.eval_strategy="steps"
+training_args.eval_steps = 100
 
 logger = logging.getLogger()
 
