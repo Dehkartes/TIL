@@ -37,3 +37,14 @@ public:
 		return output;
 	}
 };
+
+class ReLU : public Layer {
+public:
+	vector<float> forward(const vector<float>& input) override {
+		vector<float> output(input.size(), 0.0f);
+		for (size_t i = 0; i < input.size(); i++) {
+			output[i] = max(0.0f, input[i]); // ReLU 활성화 함수 적용
+		}
+		return output;
+	}
+};
