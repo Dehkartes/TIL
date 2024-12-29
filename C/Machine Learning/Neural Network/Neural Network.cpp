@@ -48,3 +48,21 @@ public:
 		return output;
 	}
 };
+
+class NeuralNetwork {
+private:
+	vector<shared_ptr<Layer>> layers; // Layer 관리
+
+public:
+	void add_layer(const shared_ptr<Layer>& layer) {
+		layers.push_back(layer);
+	}
+
+	vector<float> predict(const vector<float>& input) {
+		vector<float> output = input;
+		for (const auto& layer : layers) {
+			output = layer->forward(output); // 각 Layer의 forward 메서드 호출
+		}
+		return output;
+	}
+};
