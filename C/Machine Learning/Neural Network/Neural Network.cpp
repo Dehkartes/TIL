@@ -71,7 +71,7 @@ public:
 	vector<float> predict(const vector<float>& input) {
 		vector<float> output = input;
 		for (const auto& layer : layers) {
-			output = layer->forward(output); // 각 Layer의 forward 메서드 호출
+			output = layer->forward(output);
 		}
 		return output;
 	}

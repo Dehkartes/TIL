@@ -6,9 +6,9 @@ using namespace std;
 int main() {
 	NeuralNetwork nn;
 
-	nn.add_layer(make_shared<Dense>(3, 5));
+	nn.add_layer(make_shared<Linear>(3, 5));
 	nn.add_layer(make_shared<ReLU>());
-	nn.add_layer(make_shared<Dense>(5, 2));
+	nn.add_layer(make_shared<Linear>(5, 2));
 
 	vector<float> input = { 1.0f, 2.0f, 3.0f };
 
