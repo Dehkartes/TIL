@@ -15,8 +15,8 @@ int main() {
 	vector<float> output = nn.predict(input);
 
 	cout << "Output: ";
-	for (const auto& val : output) {
-		cout << val << " ";
+	for (const auto& i : output) {
+		cout << i << " ";
 	}
 	cout << endl;
 

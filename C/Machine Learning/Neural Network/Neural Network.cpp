@@ -70,8 +70,8 @@ public:
 
 	vector<float> predict(const vector<float>& input) {
 		vector<float> output = input;
-		for (const auto& layer : layers) {
-			output = layer->forward(output);
+		for (const auto& i : layers) {
+			output = i->forward(output);
 		}
 		return output;
 	}
