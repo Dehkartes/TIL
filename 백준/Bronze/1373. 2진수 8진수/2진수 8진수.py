@@ -1,0 +1,1 @@
+print(oct(int(f"{input()}", 2))[2:])
