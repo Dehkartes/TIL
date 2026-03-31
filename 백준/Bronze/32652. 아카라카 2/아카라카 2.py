@@ -1,0 +1,1 @@
+print("AK" + "ARAK" * int(input()) + "A")
