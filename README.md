@@ -12,3 +12,15 @@
 - **`C/`**: C 프로젝트 및 실습
 - **`Python/`**: 파이썬 스크립트/연습
 - **`Spring/`**: 스프링 프로젝트/실습
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/Dehkartes/TIL/tree/main/0001-two-sum/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/Dehkartes/TIL/tree/main/0001-two-sum/) | Easy |
+<!---LeetCode Topics End-->
